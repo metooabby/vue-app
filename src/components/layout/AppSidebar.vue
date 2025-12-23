@@ -4,7 +4,7 @@
     <nav>
       <ul class="space-y-2 text-gray-700">
         <li class="px-3 py-2 rounded hover:bg-emerald-100 cursor-pointer">
-          <router-link to="/">Dashboard</router-link>
+          <router-link to="/">Home</router-link>
         </li>
         <li class="px-3 py-2 rounded hover:bg-emerald-100 cursor-pointer">
           <router-link to="/reactivity">Reactivity</router-link>
