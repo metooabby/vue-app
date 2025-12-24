@@ -11,7 +11,7 @@ import AppFooter from "../layout/AppFooter.vue";
     <div class="flex flex-1 overflow-hidden">
       <AppSidebar />
 
-      <main class="flex-1 p-6 overflow-auto bg-gray-50">
+      <main class="flex-1 p-6 overflow-auto bg-gray-50 overflow-auto">
         <slot />
       </main>
     </div>

@@ -1,13 +1,15 @@
 <script setup lang="ts">
 import { useRoute } from "vue-router";
 import { computed } from "vue";
+import { useAuthStore } from "../stores/auth";
 
+const auth = useAuthStore();
 const route = useRoute();
 
 /**
  * Route param
  */
-const userId = computed(() => route.params.id);
+// const userId = computed(() => route.params.id);
 
 /**
  * Query param (optional)
@@ -25,7 +27,7 @@ const tab = computed(() => route.query.tab || "overview");
       <p class="text-gray-700">
         User ID:
         <span class="font-semibold">
-          {{ userId }}
+          {{ auth.user?.id }}
         </span>
       </p>
 

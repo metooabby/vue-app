@@ -2,6 +2,7 @@
 import { useAuthStore } from '../stores/auth';
 
 const auth = useAuthStore();
+
 </script>
 
 <template>
@@ -11,7 +12,7 @@ const auth = useAuthStore();
     </h2>
 
    <p class="text-gray-700">
-      Welcome, {{ auth.user?.name }}
+      Welcome, {{auth.user?.name }}
     </p>
 
 
